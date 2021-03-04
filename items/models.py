@@ -8,7 +8,7 @@ class Item(models.Model):
     id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=150)
     description = models.TextField()
-    image = models.ImageField(upload_to=f'{MEDIA_ITEM_IMAGE_DIR}/',
+    image = models.ImageField(upload_to=MEDIA_ITEM_IMAGE_DIR + '/',
                               default='150x150.gif')
     weight = models.PositiveSmallIntegerField()
     price = models.DecimalField(max_digits=8, decimal_places=2)
