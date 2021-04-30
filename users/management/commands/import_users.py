@@ -1,7 +1,7 @@
 from django.contrib.auth.hashers import make_password
 from django.core.management import BaseCommand
-from users.models import User
 
+from users.models import User
 from utils.getting_jsons import update_or_create_elements, get_use_content
 
 USERS_URL = 'https://raw.githubusercontent.com/stepik-a-w/drf-project-boxes/master/recipients.json'
